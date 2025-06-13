@@ -1,7 +1,29 @@
+# dependencies
 node_modules
-.DS_Store
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# build
+.output 
+.nitro
 dist
 dist-ssr
+
+# misc
+.DS_Store
+*.pem
 *.local
-.env.*
-!.env.example
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
